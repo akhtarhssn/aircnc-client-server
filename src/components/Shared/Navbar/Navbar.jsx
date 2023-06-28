@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "../Container";
 import Logo from "./Logo";
+import Search from "./Search";
+import MenuDropdown from "./MenuDropDown";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -8,21 +10,15 @@ const Navbar = () => {
     <div className="fixed w-full bg-white z-10 shadow-sm">
       <div className="py-4 border-b[1px]">
         <Container>
-          <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
+          <div className="flex flex-row items-center justify-between gap-3 lg:gap-0">
             {/* logo */}
-            <div>
-              <Link to={"/"}>
-                <Logo />
-              </Link>
-            </div>
+            <Link to={"/"}>
+              <Logo />
+            </Link>
             {/* search */}
-            <div>
-              <h1>Search</h1>
-            </div>
+            <Search />
             {/* menu */}
-            <div>
-              <h1>Menu</h1>
-            </div>
+            <MenuDropdown />
           </div>
         </Container>
       </div>
