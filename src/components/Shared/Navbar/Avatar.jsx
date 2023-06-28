@@ -10,7 +10,7 @@ const Avatar = () => {
       alt={`${
         user ? `${user.displayName}'s profile picture` : "User Profile Picture"
       }`}
-      className="h-7 w-7 rounded-full"
+      className="h-7 w-7 rounded-full" //bg-cover object-top
     />
   );
 };
